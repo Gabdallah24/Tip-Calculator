@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-eta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">  <m
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="block1">
+    <p>Bill Amount: </p>
+    <input id="num1" type="text"><br>
+    
+    <p>Tip %: </p>
+    <select>
+      <option disabled selected value> -- select an option -- </option>
+      <option value="amazing">Amazing - 25%</option>
+      <option value="great">Great - 20%</option>
+      <option value="good">Good - 15%</option>
+      <option value="okay">Okay - 10%</option>
+    </select>
+
+    <p>Number of People Splitting Bill:</p>
+    <input id="num2" type="text"><br>
+
+    <button type="button">Calculate</button>
   
-</body>
+  </div>
+  </body>
 </html>
