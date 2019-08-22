@@ -7,23 +7,36 @@
   </head>
   <body>
     <div class="block1">
-    <p>Bill Amount: </p>
-    <input id="num1" type="text"><br>
-    
-    <p>Tip %: </p>
-    <select>
-      <option disabled selected value> -- select an option -- </option>
-      <option value="amazing">Amazing - 25%</option>
-      <option value="great">Great - 20%</option>
-      <option value="good">Good - 15%</option>
-      <option value="okay">Okay - 10%</option>
-    </select>
+
+    <p id="title">Tip Calculator $$</p>
+      
+    <form>
+      <p>Bill Amount: </p>
+      <p>$ <input id="num1" type="text" placeholder="___.___"><br>
+      
+      <p>Tip %: </p>
+      <select id="service">
+        <option disabled selected value="0"> -- select an option -- </option>
+        <option value="0.25">Amazing - 25%</option>
+        <option value="0.2">Great - 20%</option>
+        <option value="0.15">Good - 15%</option>
+        <option value="0.1">Okay - 10%</option>
+      </select>
+    </form>
 
     <p>Number of People Splitting Bill:</p>
-    <input id="num2" type="text"><br>
+    <input id="num2" type="text" placeholder="#"><br>
 
-    <button type="button">Calculate</button>
+    <button type="button" id="calculate">Calculate</button>
   
   </div>
+
+  <div id="totalTip">
+    <sup>$</sup><span id="tip">0.00</span>
+    <p id="each">each</p>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+
   </body>
 </html>
